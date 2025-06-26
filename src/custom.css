@@ -1,0 +1,29 @@
+  .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20; 
+  }
+
+  .slick-dots li button:before {
+    font-size: 14px;
+    color: #ddd;
+    opacity: 0.5;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #6A4DF4; 
+    opacity: 1;
+  }
+
+  /* arrow */
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 24px;
+    line-height: 1;
+    opacity: .75;
+    color: #4756DF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

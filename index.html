@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Devora Agency provides high-quality web design, development, and digital marketing services.">
+    <meta name="keywords" content="web design, UI/UX, digital marketing, Devora Agency">
+    <meta name="author" content="Devora Agency">
+    <title>Devora Agency</title>
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="./src/assets/images/icons/home.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Fontasowme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Slick Theme CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/custom.css">
+</head>
+
+<body class="scroll-smooth">
+    <!-- Navbar -->
+    <header class="py-3 fixed top-0 left-0 z-50 w-full text-white bg-black/30">
+        <nav class="max-w-cotainerCustom mx-auto px-4 md:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="">
+                    <a href="#" class="text-primary text-4xl font-bold">Devora</a>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex lg:gap-10 md:gap-3">
+                        <li><a href="#" class="text-lg duration-300 hover:text-primary inline-block">Home</a></li>
+                        <li><a href="#agency" class="text-lg duration-300 hover:text-primary inline-block">About</a>
+                        </li>
+                        <li><a href="#services" class="text-lg duration-300 hover:text-primary inline-block">Service</a>
+                        </li>
+                        <li><a href="#agency" class="text-lg duration-300 hover:text-primary inline-block">Careers</a>
+                        </li>
+                        <li><a href="#contact" class="text-lg duration-300 hover:text-primary inline-block">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-white hidden md:block">
+                    <a href="#"
+                        class="text-xl font-medium bg-primary rounded-lg px-10 py-3 inline-block cursor-pointer duration-300 hover:bg-primary/90">Contact</a>
+                </div>
+                <!-- Bar for mobile menu -->
+                <button class="cursor-pointer text-2xl block md:hidden" id="btn"><i
+                        class="fa-solid fa-bars"></i></button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="mt-5 hidden" id="menu">
+                <ul class="text-center space-y-5 bg-black">
+                    <hr>
+                    <li><a href="#" class="text-lg duration-300 hover:text-primary inline-block">Home</a></li>
+                    <hr>
+                    <li><a href="#agency" class="text-lg duration-300 hover:text-primary inline-block">About</a></li>
+                    <hr>
+                    <li><a href="#services" class="text-lg duration-300 hover:text-primary inline-block">Service</a>
+                    </li>
+                    <hr>
+                    <li><a href="#agency" class="text-lg duration-300 hover:text-primary inline-block">Careers</a></li>
+                    <hr>
+                    <li><a href="#contact" class="text-lg duration-300 hover:text-primary inline-block">Contact</a></li>
+                    <hr>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+        <!-- for desktop -->
+        <div class="relative hidden md:block">
+            <!-- Slick Slides -->
+            <div class="bg-slider">
+                <div><img src="./src/assets/images/banner1.png" alt="Slide 1" class="w-full"></div>
+                <div><img src="./src/assets/images/banner2.png" alt="Slide 2" class="w-full"></div>
+                <div><img src="./src/assets/images/banner3.png" alt="Slide 3" class="w-full"></div>
+                <div><img src="./src/assets/images/banner4.png" alt="Slide 3" class="w-full"></div>
+                <div><img src="./src/assets/images/banner5.png" alt="Slide 3" class="w-full"></div>
+                <div><img src="./src/assets/images/banner6.png" alt="Slide 3" class="w-full"></div>
+            </div>
+            <!-- Overlay Content -->
+            <div
+                class="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10 bg-black/70">
+                <div class="max-w-cotainerCustom mx-auto px-4 md:px-6 lg:px-8 space-y-4 md:space-y-10">
+                    <h1 class="text-4xl md:text-6xl lg:text-[75px] font-bold lg:px-20">We Help brands with high quality
+                        services</h1>
+                    <p class="text-base lg:w-1/2 px-5 mx-auto">There are many variations of passages of Lorem Ipsum
+                        available, but themajority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look.</p>
+                    <button
+                        class="text-xl font-medium bg-primary rounded-lg px-10 py-3 inline-block cursor-pointer duration-300 hover:bg-primary/90">Get
+                        Started</button>
+                </div>
+            </div>
+        </div>
+        <!-- For mobile -->
+        <div class="relative block md:hidden">
+            <!-- Slick Slides -->
+            <div class="bg-slider">
+                <div class="bg-slider">
+                    <div><img src="./src/assets/images/banner1b.png" alt="Slide 1" class="w-full"></div>
+                    <div><img src="./src/assets/images/banner2b.png" alt="Slide 2" class="w-full"></div>
+                    <div><img src="./src/assets/images/banner3b.png" alt="Slide 3" class="w-full"></div>
+                    <div><img src="./src/assets/images/banner4b.png" alt="Slide 3" class="w-full"></div>
+                    <div><img src="./src/assets/images/banner5b.png" alt="Slide 3" class="w-full"></div>
+                    <div><img src="./src/assets/images/banner6b.png" alt="Slide 3" class="w-full"></div>
+                </div>
+            </div>
+            <!-- Overlay Content -->
+            <div
+                class="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10 bg-black/70">
+                <div class="max-w-cotainerCustom mx-auto px-4 md:px-6 lg:px-8 space-y-4 md:space-y-10">
+                    <h1 class="text-4xl md:text-6xl lg:text-[75px] font-bold lg:px-20">We Help brands with high quality
+                        services</h1>
+                    <p class="text-base lg:w-1/2 px-5 mx-auto">There are many variations of passages of Lorem Ipsum
+                        available, but themajority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look.</p>
+                    <button
+                        class="text-xl font-medium bg-primary rounded-lg px-10 py-3 inline-block cursor-pointer duration-300 hover:bg-primary/90">Get
+                        Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success -->
+    <section class="py-12 md:py-25" id="success">
+        <div class="max-w-cotainerCustom mx-auto px-4 md:px-6 lg:px-8">
+            <div
+                class="flex flex-col md:flex-row bg-[#E0FFF9] px-12 py-15 rounded-3xl items-center gap-8 text-center md:text-left">
+                <div class="flex-2">
+                    <h4 class="text-primary text-2xl font-medium">Our Success</h4>
+                    <h3 class="text-4xl font-semibold text-cBlack">West cost Brand makers-Global Edge</h3>
+                </div>
+                <div class="flex-1">
+                    <h4 class="text-5xl font-bold">200+</h4>
+                    <p class="text-cDark text-lg font-medium">Customer Satisfied</p>
+                </div>
+                <div class="flex-1">
+                    <h4 class="text-5xl font-bold">4.5</h4>
+                    <p class="text-cDark text-lg font-medium">200+ Avg rating</p>
+                </div>
+                <div class="flex-1">
+                    <h4 class="text-5xl font-bold">351+</h4>
+                    <p class="text-cDark text-lg font-medium">Project Delivered</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="pb-12 md:pb-25" id="services">
+        <div class="max-w-cotainerCustom mx-auto px-4 md:px-6 lg:px-8">
+            <div class="space-y-5">
+                <h2 class="text-cBlack text-3xl md:text-[45px] font-bold text-center">Our Provided Services</h2>
+                <p class="text-base text-cDark md:w-1/2 mx-auto text-center px-5">There are many variations of passages
+                    of
+                    Lorem Ipsum available, but themajority have suffered alteration in some form.</p>
+
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Service item -->
+                    <div
+                        class="max-w-full p-12 text-center rounded-[20px] duration-300 hover:shadow-2xl hover:shadow-cDark border border-gray-100">
+                        <img src="./src/assets/images/icons/web.png" alt="Service icon" class="mx-auto mt-5">
+                        <h3 class="text-cBlack font-bold text-2xl mt-8 mb-4">Web Design</h3>
+                        <p class="text-base text-cDark">There are many variations of passages of Lorem Ipsum
+                            available, but themajority have suffered alteration in some form, by injected humour, or
+                            randomised words which don't look.</p>
+                    </div>
+                    <!-- Service item -->
+                    <div
+                        class="max-w-full p-12 text-center rounded-[20px] duration-300 hover:shadow-2xl hover:shadow-cDark border border-gray-100">
+                        <img src="./src/assets/images/icons/uiux.png" alt="Service icon" class="mx-auto mt-5">
+                        <h3 class="text-cBlack font-bold text-2xl mt-8 mb-4">UI/UX Design</h3>
+                        <p class="text-base text-cDark">There are many variations of passages of Lorem Ipsum
+                            available, but themajority have suffered alteration in some form, by injected humour, or
+                            randomised words which don't look.</p>
+                    </div>
+                    <!-- Service item -->
+                    <div
+                        class="max-w-full p-12 text-center rounded-[20px] duration-300 hover:shadow-2xl hover:shadow-cDark border border-gray-100">
+                        <img src="./src/assets/images/icons/webd.png" alt="Service icon" class="mx-auto mt-5">
+                        <h3 class="text-cBlack font-bold text-2xl mt-8 mb-4">Web Development</h3>
+                        <p class="text-base text-cDark">There are many variations of passages of Lorem Ipsum
+                            available, but themajority have suffered alteration in some form, by injected humour, or
+                            randomised words which don't look.</p>
+                    </div>
+                    <!-- Service item -->
+                    <div
+                        class="max-w-full p-12 text-center rounded-[20px] duration-300 hover:shadow-2xl hover:shadow-cDark border border-gray-100">
+                        <img src="./src/assets/images/icons/moton.png" alt="Service icon" class="mx-auto mt-5">
+                        <h3 class="text-cBlack font-bold text-2xl mt-8 mb-4">Motion Graphics</h3>
+                        <p class="text-base text-cDark">There are many variations of passages of Lorem Ipsum
+                            available, but themajority have suffered alteration in some form, by injected humour, or
+                            randomised words which don't look.</p>
+                    </div>
+                    <!-- Service item -->
+                    <div
+                        class="max-w-full p-12 text-center rounded-[20px] duration-300 hover:shadow-2xl hover:shadow-cDark border border-gray-100">
+                        <img src="./src/assets/images/icons/3d.png" alt="Service icon" class="mx-auto mt-5">
+                        <h3 class="text-cBlack font-bold text-2xl mt-8 mb-4">3D Animation</h3>
+                        <p class="text-base text-cDark">There are many variations of passages of Lorem Ipsum
+                            available, but themajority have suffered alteration in some form, by injected humour, or
+                            randomised words which don't look.</p>
+                    </div>
+                    <!-- Service item -->
+                    <div
+                        class="max-w-full p-12 text-center rounded-[20px] duration-300 hover:shadow-2xl hover:shadow-cDark border border-gray-100">
+                        <img src="./src/assets/images/icons/dm.png" alt="Service icon" class="mx-auto mt-5">
+                        <h3 class="text-cBlack font-bold text-2xl mt-8 mb-4">Digital Marketing</h3>
+                        <p class="text-base text-cDark">There are many variations of passages of Lorem Ipsum
+                            available, but themajority have suffered alteration in some form, by injected humour, or
+                            randomised words which don't look.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent work -->
+    <section class="py-12 md:py-25 bg-bgDark" id="recentwork">
+        <div class="max-w-cotainerCustom mx-auto px-4 md:px-6 lg:px-8">
+            <div class="space-y-5">
+                <h2 class="text-cBlack text-3xl md:text-[45px] font-bold text-center">Our Recent Work</h2>
+                <p class="text-base text-cDark md:w-1/2 mx-auto text-center px-5">There are many variations of passages
+                    of Lorem Ipsum available, but themajority have suffered alteration in some form.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- item -->
+                    <div class="max-w-full rounded-[20px] bg-white duration-300 hover:shadow-xl hover:shadow-gray-300">
+                        <img src="./src/assets/images/task.png" alt="Recent work photo" class="w-full rounded-[20px]">
+                        <div class="py-[30px] px-12 text-center">
+                            <h4 class="text-xl font-bold text-cBlack">Task Management App</h4>
+                            <p class="text-base text-cDark mt-2">This is a task management application that can help you
+                                be
+                                more </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="max-w-full rounded-[20px] bg-white duration-300 hover:shadow-xl hover:shadow-gray-300">
+                        <img src="./src/assets/images/saas.jpg" alt="Recent work photo" class="w-full rounded-[20px]">
+                        <div class="py-[30px] px-12 text-center">
+                            <h4 class="text-xl font-bold text-cBlack">Saas Landing Page Design</h4>
+                            <p class="text-base text-cDark mt-2">This is a task management application that can help you
+                                be
+                                more </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="max-w-full rounded-[20px] bg-white duration-300 hover:shadow-xl hover:shadow-gray-300">
+                        <img src="./src/assets/images/app.png" alt="Recent work photo" class="w-full rounded-[20px]">
+                        <div class="py-[30px] px-12 text-center">
+                            <h4 class="text-xl font-bold text-cBlack">App Design</h4>
+                            <p class="text-base text-cDark mt-2">This is a task management application that can help you
+                                be
+                                more </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="max-w-full rounded-[20px] bg-white duration-300 hover:shadow-xl hover:shadow-gray-300">
+                        <img src="./src/assets/images/landing.png" alt="Recent work photo"
+                            class="w-full rounded-[20px]">
+                        <div class="py-[30px] px-12 text-center">
+                            <h4 class="text-xl font-bold text-cBlack">Landing Page Design</h4>
+                            <p class="text-base text-cDark mt-2">This is a task management application that can help you
+                                be
+                                more </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="max-w-full rounded-[20px] bg-white duration-300 hover:shadow-xl hover:shadow-gray-300">
+                        <img src="./src/assets/images/dashboard.png" alt="Recent work photo"
+                            class="w-full rounded-[20px]">
+                        <div class="py-[30px] px-12 text-center">
+                            <h4 class="text-xl font-bold text-cBlack">Dashboard Design</h4>
+                            <p class="text-base text-cDark mt-2">This is a task management application that can help you
+                                be
+                                more </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="max-w-full rounded-[20px] bg-white duration-300 hover:shadow-xl hover:shadow-gray-300">
+                        <img src="./src/assets/images/web.png" alt="Recent work photo" class="w-full rounded-[20px]">
+                        <div class="py-[30px] px-12 text-center">
+                            <h4 class="text-xl font-bold text-cBlack">Web App Design</h4>
+                            <p class="text-base text-cDark mt-2">This is a task management application that can help you
+                                be
+                                more </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose Agenc -->
+    <section class="py-12 md:py-25" id="agency">
+        <div class="max-w-cotainerCustom mx-auto px-4 md:px-6 lg:px-8">
+            <div class="space-y-5">
+                <h2 class="text-cBlack text-3xl md:text-[45px] font-bold text-center">Why You Should Choose Agenc </h2>
+                <p class="text-base text-cDark md:w-1/2 mx-auto text-center px-5 mb-10">There are many variations of
+                    passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                    injected humour, or randomised words which don't look even slightly believable.</p>
+                <div class="flex justify-between items-center flex-col-reverse md:flex-row gap-6">
+                    <div class="md:w-8/12 mt-10 md:mt-0">
+                        <div class="grid sm:grid-cols-2 grid-cols-1 gap-6">
+                            <div class=" p-3 space-y-3">
+                                <div class="w-16">
+                                    <img src="./src/assets/images/icons/light.png" alt="Light" class="w-full">
+                                </div>
+                                <h4 class="text-2xl font-bold text-cBlack">Innovative Ideas</h4>
+                                <p class="md:w-3/4 text-base text-cDark">Because each project is different, we adapt to
+                                    your business model.</p>
+                            </div>
+                            <div class=" p-3 space-y-3">
+                                <div class="w-16">
+                                    <img src="./src/assets/images/icons/light.png" alt="Light" class="w-full">
+                                </div>
+                                <h4 class="text-2xl font-bold text-cBlack">Innovative Ideas</h4>
+                                <p class="md:w-3/4 text-base text-cDark">Because each project is different, we adapt to
+                                    your business model.</p>
+                            </div>
+                            <div class=" p-3 space-y-3">
+                                <div class="w-16">
+                                    <img src="./src/assets/images/icons/support.png" alt="Light" class="w-full">
+                                </div>
+                                <h4 class="text-2xl font-bold text-cBlack">Dedicated Support</h4>
+                                <p class="md:w-3/4 text-base text-cDark">We provide 24/7 support for all our clients and
+                                    serve them professionally.</p>
+                            </div>
+                            <div class=" p-3 space-y-3">
+                                <div class="w-16">
+                                    <img src="./src/assets/images/icons/support.png" alt="Light" class="w-full">
+                                </div>
+                                <h4 class="text-2xl font-bold text-cBlack">Dedicated Support</h4>
+                                <p class="md:w-3/4 text-base text-cDark">We provide 24/7 support for all our clients and
+                                    serve them professionally.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-4/12">
+                        <div class="rounded-3xl overflow-hidden">
+                            <img src="./src/assets/images/team.png" alt="Team" class="w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Client Reviews -->
+    <section class="pb-12 md:pb-25" id="clients">
+        <div class="max-w-cotainerCustom mx-auto px-4 md:px-6 lg:px-8">
+            <div class="">
+                <h2 class="text-cBlack text-3xl md:text-[45px] font-bold text-center">Some Client Reviews</h2>
+                <p class="text-base text-cDark md:w-1/2 mx-auto text-center px-5 mb-10">There are many variations of
+                    passages of Lorem Ipsum available, but themajority have suffered alteration in some form.</p>
+                <div class="client-reviews">
+                    <!-- Reeveiw item -->
+                    <div class="px-3">
+                        <div
+                            class="hover:bg-[#F4EFEF] p-14 rounded-3xl space-y-4 border border-[#F4EFEF] duration-300 ">
+                            <div class="w-14">
+                                <img src="./src/assets/images/icons/q.png" alt="Qutie" class="w-full">
+                            </div>
+                            <p class="text-base text-cDark">I had a good experience while using this app, what
+                                fascinated me
+                                was the live tracking feature There are many variations of passages of Lorem Ipsum
+                                available, but the majority.</p>
+                            <div class="text-yellow-500">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <div class="w-12 rounded-full overflow-x-hidden">
+                                    <img src="./src/assets/images/icons/client.png" alt="Client" class="w-full">
+                                </div>
+                                <div class="">
+                                    <h4 class="text-xl font-bold text-cBlack">Eric Drake</h4>
+                                    <p class="text-base text-cDark">Digital Marketor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3">
+                        <div
+                            class="hover:bg-[#F4EFEF] p-14 rounded-3xl space-y-4 border border-[#F4EFEF] duration-300 ">
+                            <div class="w-14">
+                                <img src="./src/assets/images/icons/q.png" alt="Qutie" class="w-full">
+                            </div>
+                            <p class="text-base text-cDark">I had a good experience while using this app, what
+                                fascinated me
+                                was the live tracking feature There are many variations of passages of Lorem Ipsum
+                                available, but the majority.</p>
+                            <div class="text-yellow-500">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <div class="w-12 rounded-full overflow-x-hidden">
+                                    <img src="./src/assets/images/icons/client.png" alt="Client" class="w-full">
+                                </div>
+                                <div class="">
+                                    <h4 class="text-xl font-bold text-cBlack">Eric Drake</h4>
+                                    <p class="text-base text-cDark">Digital Marketor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3">
+                        <div
+                            class="hover:bg-[#F4EFEF] p-14 rounded-3xl space-y-4 border border-[#F4EFEF] duration-300 ">
+                            <div class="w-14">
+                                <img src="./src/assets/images/icons/q.png" alt="Qutie" class="w-full">
+                            </div>
+                            <p class="text-base text-cDark">I had a good experience while using this app, what
+                                fascinated me
+                                was the live tracking feature There are many variations of passages of Lorem Ipsum
+                                available, but the majority.</p>
+                            <div class="text-yellow-500">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <div class="w-12 rounded-full overflow-x-hidden">
+                                    <img src="./src/assets/images/icons/client.png" alt="Client" class="w-full">
+                                </div>
+                                <div class="">
+                                    <h4 class="text-xl font-bold text-cBlack">Ibrahim Khan</h4>
+                                    <p class="text-base text-cDark">Digital Marketor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3">
+                        <div
+                            class="hover:bg-[#F4EFEF] p-14 rounded-3xl space-y-4 border border-[#F4EFEF] duration-300 ">
+                            <div class="w-14">
+                                <img src="./src/assets/images/icons/q.png" alt="Qutie" class="w-full">
+                            </div>
+                            <p class="text-base text-cDark">I had a good experience while using this app, what
+                                fascinated me
+                                was the live tracking feature There are many variations of passages of Lorem Ipsum
+                                available, but the majority.</p>
+                            <div class="text-yellow-500">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <div class="w-12 rounded-full overflow-x-hidden">
+                                    <img src="./src/assets/images/icons/client.png" alt="Client" class="w-full">
+                                </div>
+                                <div class="">
+                                    <h4 class="text-xl font-bold text-cBlack">Rakib Ahmed</h4>
+                                    <p class="text-base text-cDark">Digital Marketor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3">
+                        <div
+                            class="hover:bg-[#F4EFEF] p-14 rounded-3xl space-y-4 border border-[#F4EFEF] duration-300 ">
+                            <div class="w-14">
+                                <img src="./src/assets/images/icons/q.png" alt="Qutie" class="w-full">
+                            </div>
+                            <p class="text-base text-cDark">I had a good experience while using this app, what
+                                fascinated me
+                                was the live tracking feature There are many variations of passages of Lorem Ipsum
+                                available, but the majority.</p>
+                            <div class="text-yellow-500">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <div class="w-12 rounded-full overflow-x-hidden">
+                                    <img src="./src/assets/images/icons/client.png" alt="Client" class="w-full">
+                                </div>
+                                <div class="">
+                                    <h4 class="text-xl font-bold text-cBlack">Litan Molla</h4>
+                                    <p class="text-base text-cDark">Web Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-12 md:py-25 bg-bgDark" id="contact">
+        <div class="max-w-cotainerCustom mx-auto px-4 md:px-6 lg:px-8">
+            <div class="flex justify-between items-center gap-8 flex-col-reverse md:flex-row">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-cBlack text-3xl md:text-[45px] font-bold mb-3">We Do design, Code & Development</h2>
+                    <p class="text-base text-cDark mb-2">I had a good experience while using this app, what fascinated
+                        me was
+                        the live tracking feature There are many variations of passages of Lorem Ipsum available, but
+                        the majority.</p>
+                    <p class="text-base text-cDark">There are many variations of passages of Lorem Ipsum available, but
+                        themajority have suffered alteration in some form.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-11 rounded-[20px] duration-300 hover:shadow-lg hover:shadow-gray-300">
+                        <h4 class="text-[30px] font-bold text-cBlack text-center">Get a free quote now</h4>
+                        <form action="" class="space-y-5">
+                            <div class="">
+                                <label for="" class="block text-base text-cBlack font-medium mb-2">Email</label>
+                                <input type="email" placeholder="Enter your name"
+                                    class="w-full border border-gray-300 px-6 py-4 rounded-xl block">
+                            </div>
+                            <div class="">
+                                <label for="" class="block text-base text-cBlack font-medium mb-2">Name</label>
+                                <input type="text" placeholder="Enter you r email"
+                                    class="w-full border border-gray-300 px-6 py-4 rounded-xl block">
+                            </div>
+                            <div class="">
+                                <label for="" class="block text-base text-cBlack font-medium mb-2">Phone</label>
+                                <input type="text" placeholder="Enter your phone number"
+                                    class="w-full border border-gray-300 px-6 py-4 rounded-xl block">
+                            </div>
+                            <div class="">
+                                <input type="button"
+                                    class="w-full border border-primary text-white font-semibold bg-primary mt-2 px-6 py-4 rounded-xl cursor-pointer duration-300 hover:bg-primary/90 block"
+                                    value="Get Pricing Now">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-12 md:py-25 bg-white">
+        <div class="max-w-cotainerCustom mx-auto px-4 md:px-6 lg:px-8">
+            <div class="flex justify-between gap-8 flex-col md:flex-row">
+                <div class="md:w-2/6">
+                    <div class="">
+                        <a href="#" class="text-primary text-4xl font-bold m-0">Devora</a>
+                        <p class="text-base text-gray-500 pt-3">I had a good experience while using this app, what
+                            fascinated me was the live tracking feature There are many variations of passages of Lorem
+                            Ipsum available, but the majority.</p>
+                    </div>
+                </div>
+                <div class="md:w-4/6">
+                    <div class="grid sm:grid-cols-4 grid-cols-2">
+                        <div class="">
+                            <p class="text-xl font-bold text-cBlack mb-4">About</p>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-gray-500">About Us</a></li>
+                                <li><a href="#" class="text-gray-500">Features</a></li>
+                                <li><a href="#" class="text-gray-500">News</a></li>
+                                <li><a href="#" class="text-gray-500">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <p class="text-xl font-bold text-cBlack mb-4">Company</p>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-gray-500">Our Team</a></li>
+                                <li><a href="#" class="text-gray-500">Partner With Us</a></li>
+                                <li><a href="#" class="text-gray-500">FAQ</a></li>
+                                <li><a href="#" class="text-gray-500">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <p class="text-xl font-bold text-cBlack mb-4">Support</p>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-gray-500">About</a></li>
+                                <li><a href="#" class="text-gray-500">Support Center</a></li>
+                                <li><a href="#" class="text-gray-500">Feedback</a></li>
+                                <li><a href="#" class="text-gray-500">Contact Us</a></li>
+                                <li><a href="#" class="text-gray-500">Accesbility</a></li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <p class="text-xl font-bold text-cBlack mb-4">Get in touch</p>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-gray-500">info@gmail.com</a></li>
+                                <li><a href="#" class="text-gray-500">+88 0121 0212</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section>
+        <div class="max-w-cotainerCustom mx-auto px-4 md:px-6 lg:px-8">
+            <hr class="text-gray-300">
+            <p class="py-5 text-center text-gray-500">All credit goes to @devora</p>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom -->
+    <script src="./src/app.js"></script>
+</body>
+
+</html>
